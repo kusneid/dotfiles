@@ -14,7 +14,7 @@
     ### Display ###
 
     # Which monitor should the notifications be displayed on.
-    monitor = 0
+    monitor = 0,1
 
     # Display notification on focused monitor.  Possible modes are:
     #   mouse: follow mouse pointer
@@ -27,20 +27,20 @@
     #
     # If this option is set to mouse or keyboard, the monitor option
     # will be ignored.
-    follow = none
+    follow = mouse
 
     ### Geometry ###
 
     # dynamic width from 0 to 300
     # width = (0, 300)
     # constant width of 300
-    width = 300
+    width = 600
 
     # The maximum height of a single notification, excluding the frame.
-    height = (0,300)
+    height = (100,300)
 
     # Position the notification in the top right corner
-    origin = top-center
+    origin = bottom-center
 
     # Offset from the origin
     offset = 0x30
@@ -105,7 +105,7 @@
     frame_width = 1
 
     # Defines color of the frame around the notification window.
-    frame_color = "#ffffff"
+    frame_color = "#582966"
 
     # Size of gap to display between notifications - requires a compositor.
     # If value is greater than 0, separator_height will be ignored and a border
@@ -344,6 +344,10 @@
     # Icon for notifications with critical urgency, uncomment to enable
     #default_icon = /path/to/icon
 
+[play_sound]
+    summary = "*"
+    script = $HOME/dotfiles/Sounds/alert.sh
+
 # Every section that isn't one of the above is interpreted as a rules to
 # override settings for certain messages.
 #
@@ -467,3 +471,4 @@
 #    set_stack_tag = "volume"
 #
 # vim: ft=cfg
+

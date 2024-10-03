@@ -1,41 +1,33 @@
-ignore-empty-password
-
-indicator-radius=100
-indicator-thickness=30
-
-#font=FiraGO Regular
-#font-size=11
-
-text-color=00000000
-text-clear-color=00000000
-text-caps-lock-color=00000000
-text-ver-color=00000000
-text-wrong-color=00000000
-
-color=000000
-separator-color=3b425200
-#line-color=
-
-# Sets the color of the key press highlight segments.
-key-hl-color=a3be8c
-# Sets the color of backspace highlight segments.
-bs-hl-color=ebcb8b
-
-caps-lock-key-hl-color=d08770
-caps-lock-bs-hl-color=d08770
-
-
-# Sets the color of the inside of the indicator.
-inside-color=2e344000
-inside-clear-color=ebcb8b00
-inside-caps-lock-color=d0877000
-inside-ver-color=a3be8c00
-inside-wrong-color=bf616a00
-line-uses-inside
-
-# Sets the color of the ring of the indicator when typing or idle.
-ring-color=3b4252
-ring-clear-color=ebcb8b
-ring-caps-lock-color=d08770
-ring-ver-color=a3be8c
-ring-wrong-color=bf616a
+daemonize
+clock
+effect-blur=20x5
+color=1f1d2e80
+font="JetBrains Mono"
+indicator
+indicator-radius=200
+indicator-thickness=20
+line-color=1f1d2e
+ring-color=191724
+inside-color=1f1d2e
+key-hl-color=eb6f92
+separator-color=00000000
+text-color=e0def4
+text-caps-lock-color=""
+line-ver-color=eb6f92
+ring-ver-color=eb6f92
+inside-ver-color=1f1d2e
+text-ver-color=e0def4
+ring-wrong-color=31748f
+text-wrong-color=31748f
+inside-wrong-color=1f1d2e
+inside-clear-color=1f1d2e
+text-clear-color=e0def4
+ring-clear-color=9ccfd8
+line-clear-color=1f1d2e
+line-wrong-color=1f1d2e
+bs-hl-color=31748f
+grace=2
+grace-no-mouse
+grace-no-touch
+datestr="%d.%m"
+fade-in="0.1"U
