@@ -4,9 +4,9 @@ CONFIG_DIR="$HOME/.config"
 
 echo "downloading packages:(YAY REQUIRED)"
 
-yay -S wlogout swaylock-effects hyprshot
+yay -S wlogout hyprlock hyprshot
 
-sudo pacman -S dunst fish hyprland brightnessctl pamixer playerctl hypridle wl-clipboard cliphist hyprpaper rofi-wayland waybar ttf-jetbrains-mono ttf-jetbrains-mono-nerd hyprlang hyprcursor dunst pavucontrol blueman nm-connection-editor pulseaudio pipewire-pulse kitty nemo firefox rofi wlogout hyprshot
+sudo pacman -S dunst fish hyprland brightnessctl pamixer playerctl hypridle wl-clipboard cliphist hyprpaper rofi-wayland waybar ttf-jetbrains-mono ttf-jetbrains-mono-nerd hyprlang hyprcursor dunst pavucontrol blueman nm-connection-editor pulseaudio pipewire-pulse kitty nemo firefox rofi-wayland wlogout hyprshot lx-appearence breeze
 
 DOTFILES_DIR="$(pwd)" 
 

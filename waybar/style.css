@@ -12,9 +12,10 @@ window#waybar {
   color: #ffffff;
 }
 
+
 #workspaces button {
   padding: 6px;
-  color: #312541;
+  color: #6f6b74;
   margin-right: 5px;
 }
 
@@ -50,13 +51,14 @@ window#waybar {
 #custom-playerctl,
 #custom-playerlabel,
 #taskbar {
-  background: #1e1e2e;
-  opacity: 0.8;
+  
+  opacity: 1;
   padding: 0px 5px;
   margin: 0px 0px;
   margin-top: 7px;
-  border: 1px solid #181825;
-  border-radius: 20px;
+  margin-bottom: 7px;
+  border: 0px solid #c999f7;
+  border-radius: 5px;
 }
 
 #tray {

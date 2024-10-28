@@ -1,19 +1,19 @@
 {
   "layer": "top",
-  "position": "top",
-  "height": 14,
-  "spacing": 9,
+  "position": "bottom",
+  "height": 16,
+  "spacing": 10,
   "exclusive": true,
   "gtk-layer-shell": true,
   "passthrough": false,
   "fixed-center": true,
   "modules-left": [
     "hyprland/workspaces",
-    "wlr/taskbar",
+    "clock",
     "custom/playerlabel"
   ],
   "modules-center": [
-    "clock"
+    "wlr/taskbar"
   ],
   "modules-right": [
     "pulseaudio",
