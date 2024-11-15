@@ -1,14 +1,14 @@
 * {
   border: none;
   border-radius: 0;
-  font-family: "JetBrainsMono NL";
+  font-family: "Roboto";
   font-weight: bold;
   font-size: 16px;
   min-height: 0;
 }
 
 window#waybar {
-  background: rgba(255, 255, 255, 0);
+  background: rgba(41, 33, 45, 0.953);
   color: #ffffff;
 }
 
@@ -51,14 +51,13 @@ window#waybar {
 #custom-playerctl,
 #custom-playerlabel,
 #taskbar {
-  
   opacity: 1;
   padding: 0px 5px;
   margin: 0px 0px;
   margin-top: 7px;
   margin-bottom: 7px;
-  border: 0px solid #c999f7;
-  border-radius: 5px;
+  border: 0.3px solid #c999f7;
+  border-radius: 20px;
 }
 
 #tray {
@@ -70,7 +69,7 @@ window#waybar {
 }
 
 #clock {
-  color: #b794f7;
+  color: #ffffff;
 }
 
 #pulseaudio {
