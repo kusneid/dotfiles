@@ -25,7 +25,7 @@ configuration {
 
 listview {
     columns: 2;
-    lines: 8;
+    lines: 20;
     fixed-height: true;
     fixed-columns: true;
     cycle: false;
