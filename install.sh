@@ -3,10 +3,9 @@
 CONFIG_DIR="$HOME/.config"
 
 echo "downloading packages:(YAY REQUIRED)"
+echo "it's recommended to execute this shell script in tty and w/o hypr, dunst, rofi and waybar folders in ~/.config"
 
-yay -S wlogout hyprlock hyprshot
-
-sudo pacman -S dunst fish hyprland brightnessctl pamixer playerctl hypridle wl-clipboard cliphist hyprpaper rofi-wayland waybar ttf-jetbrains-mono ttf-jetbrains-mono-nerd hyprlang hyprcursor dunst pavucontrol blueman nm-connection-editor pulseaudio pipewire-pulse kitty nemo firefox rofi-wayland wlogout hyprshot lx-appearence breeze
+yay -S wlogout hyprlock hyprshot hyprland brightnessctl pamixer playerctl hypridle wl-clipboard cliphist hyprpaper waybar hyprlang hyprcursor dunst pavucontrol blueman pipewire-pulse kitty nemo firefox rofi-wayland network-manager-applet sddm
 
 DOTFILES_DIR="$(pwd)" 
 
@@ -24,6 +23,7 @@ create_symlink() {
 
 create_symlink2() {
     src="$DOTFILES_DIR/$1"
+    mkdir $HOME/Documents
     dest="$HOME/Documents/$1"
 
     if [ -e "$dest" ]; then
@@ -34,9 +34,9 @@ create_symlink2() {
     fi
 }
 
-files=("hypr" "dunst" "fish" "kitty" "rofi" "swaylock" "waybar")
+files=("hypr" "dunst" "rofi" "waybar")
 
-additional=("Sounds" "Wallpapers")
+additional=("Wallpapers")
 
 for file in "${files[@]}"; do
     create_symlink "$file"
@@ -45,5 +45,7 @@ done
 for file in "${additional[@]}"; do
     create_symlink2 "$file"
 done
+
+sudo systemctl enable --now bluetooth
 
 echo "all done"
