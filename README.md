@@ -1,2 +1,2 @@
-simple dotfiles for hyprland, terminal is kitty by default, to install execute ./install.sh, bluetooth and wifi applets located in tray, audio driver is pipewire, waybar for bar, dunst for notifications, hyprlock for locksreen, rofi(wayland version) for menu, hyprshot for screenshots
-![text](preview.png)
+dracula dotfiles for hyprland, terminal is kitty by default, to install execute ./install.sh (execute ```chmod +x ./install.sh``` to allow script to be executed), bluetooth and wifi applets located in tray, audio driver is pipewire, waybar for bar, dunst for notifications, hyprlock for locksreen, rofi(wayland version) for menu and clipboard cache, hyprshot for screenshots, most of changes for dracula theme was done by enabling qt/gtk themes, guides: https://draculatheme.com/gtk, https://draculatheme.com/gtk https://draculatheme.com/qt5
+![image](https://github.com/user-attachments/assets/892deecf-77d5-4275-941e-2317fdc0a5b2)
