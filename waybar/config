@@ -8,8 +8,7 @@
   "passthrough": false,
   "fixed-center": true,
   "modules-left": [
-    "hyprland/workspaces",
-    "custom/playerctl"
+    "hyprland/workspaces"
   ],
   "modules-center": [
     "clock"
@@ -26,6 +25,12 @@
     "icon-size": 24 ,
     "rotate": 0,
     "spacing": 6
+  },
+
+  "hyprland/language": {
+    "format": "  {}",
+    "format-en": "en",
+    "format-ru": "ru"
   },
   
   "battery": {
@@ -50,7 +55,7 @@
     "format": "  {used:0.2f}G"
   },
   "pulseaudio": {
-    "format": "{icon}   {volume}%",
+    "format": "{volume}%",
     "format-muted": "  muted",
     "format-icons": {
       "default": [" "]

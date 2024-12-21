@@ -5,7 +5,7 @@ CONFIG_DIR="$HOME/.config"
 echo "downloading packages:(YAY REQUIRED)"
 echo "it's recommended to execute this shell script in tty and w/o hypr, dunst, rofi and waybar folders in ~/.config"
 
-yay -S wlogout hyprlock hyprshot hyprland brightnessctl pamixer playerctl hypridle wl-clipboard cliphist hyprpaper waybar hyprlang hyprcursor dunst pavucontrol blueman pipewire-pulse kitty nemo firefox rofi-wayland network-manager-applet sddm
+yay -S wlogout hyprlock hyprshot hyprland brightnessctl pamixer playerctl hypridle wl-clipboard cliphist hyprpaper waybar hyprlang hyprcursor dunst pavucontrol blueman pipewire-pulse kitty nemo firefox rofi-wayland network-manager-applet sddm layan-gtk-theme-git
 
 DOTFILES_DIR="$(pwd)" 
 
@@ -34,7 +34,7 @@ create_symlink2() {
     fi
 }
 
-files=("hypr" "dunst" "rofi" "waybar")
+files=("hypr" "dunst" "rofi" "waybar" "qt5ct" "qt6ct" "kitty" "gtk-3.0")
 
 additional=("Wallpapers")
 
