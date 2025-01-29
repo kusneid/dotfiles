@@ -24,7 +24,7 @@ configuration {
 }
 
 listview {
-    columns: 1;
+    columns: 3;
     lines: 10;
     fixed-height: true;
     fixed-columns: true;
@@ -35,7 +35,7 @@ listview {
 
 window {
     transparency: "real";
-    width: 400px;
+    width: 800px;
     border-radius: @b-radius;
     background-color: @wbg-color;
     border: @w-border;

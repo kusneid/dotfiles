@@ -1,8 +1,8 @@
 {
   "layer": "top",
-  "position": "bottom",
-  "height": 16,
-  "spacing": 10,
+  "position": "top",
+  "height": 10,
+  "spacing": 7,
   "exclusive": true,
   "gtk-layer-shell": true,
   "passthrough": false,
@@ -22,7 +22,7 @@
 
   "tray": {
     "show-passive-items": true,
-    "icon-size": 24 ,
+    "icon-size": 22 ,
     "rotate": 0,
     "spacing": 6
   },
@@ -34,10 +34,10 @@
   },
   
   "battery": {
-    "format": "{icon}  {capacity}%",
-    "format-full": "{icon}  {capacity}%",
+    "format": "{icon} {capacity}%",
+    "format-full": "{icon} {capacity}%",
     "format-charging": " {capacity}%",
-    "format-plugged": "  {capacity}%",
+    "format-plugged": " {capacity}%",
     "format-alt": "{time} {icon}",
     "format-icons": [""]
   },

@@ -1,9 +1,9 @@
 [Appearance]
 color_scheme_path=/usr/share/qt5ct/colors/airy.conf
-custom_palette=false
+custom_palette=true
 icon_theme=Papirus
 standard_dialogs=default
-style=Adwaita
+style=Adwaita-Dark
 
 [Fonts]
 fixed="JetBrains Mono,12,-1,5,50,0,0,0,0,0"
