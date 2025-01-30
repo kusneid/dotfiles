@@ -28,23 +28,22 @@
   },
 
   "hyprland/language": {
-    "format": "  {}",
+    "format": "{}",
     "format-en": "en",
     "format-ru": "ru"
   },
   
   "battery": {
-    "format": "{icon} {capacity}%",
-    "format-full": "{icon} {capacity}%",
-    "format-charging": " {capacity}%",
-    "format-plugged": " {capacity}%",
+    "states": {
+      "warning": 40,
+      "critical": 15
+    },
+    "format": "{icon}  {capacity}%",
+    "format-full": "{icon}  {capacity}%",
+    "format-charging": "🔋  {capacity}%",
+    "format-plugged": "🔋  {capacity}%",
     "format-alt": "{time} {icon}",
-    "format-icons": [""]
-  },
-  "clock": {
-    "format": "<span color='#6bfffd'></span>{:%I:%M %p}",
-    "format-alt": "<span color='#ff9854'>  </span>{:%a %b %d}",
-    "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>"
+    "format-icons": ["🪫"]
   },
   "cpu": {
     "format": "   {usage}%",
@@ -55,10 +54,10 @@
     "format": "  {used:0.2f}G"
   },
   "pulseaudio": {
-    "format": "{volume}%",
-    "format-muted": "  muted",
+    "format": "{volume}% 🎶",
+    "format-muted": " muted",
     "format-icons": {
-      "default": [" "]
+      "default": ["🎶 "]
     },
     "on-click": "pavucontrol",
     "on-click-middle": "pamixer -t"

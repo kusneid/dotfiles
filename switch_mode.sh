@@ -43,6 +43,5 @@ else
     exit 1
 fi
 
-# Применение изменений
 pkill -USR1 -f qt5ct
 pkill -USR1 -f qt6ct
