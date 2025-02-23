@@ -1,7 +1,7 @@
 {
   "layer": "top",
   "position": "top",
-  "height": 10,
+  "height": 18,
   "spacing": 7,
   "exclusive": true,
   "gtk-layer-shell": true,
@@ -55,7 +55,7 @@
   },
   "pulseaudio": {
     "format": "{volume}% 🎶",
-    "format-muted": " muted",
+    "format-muted": "🔈 muted",
     "format-icons": {
       "default": ["🎶 "]
     },

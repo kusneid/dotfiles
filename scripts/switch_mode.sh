@@ -9,8 +9,8 @@ QT5_ALT_CONF="$QT5_DIR/qt5ct1.conf"
 QT6_CONF="$QT6_DIR/qt6ct.conf"
 QT6_ALT_CONF="$QT6_DIR/qt6ct1.conf"
 
-blackwallpaper="$HOME/Documents/Wallpapers/nebo-derevia-gory-tuchi-priroda-skaly-vodopad-new-zealand-vo.jpg"
-whitewallpaper="$HOME/Documents/Wallpapers/melanie-magdalena-KpBAYMNf9Tw-unsplash.jpg"
+blackwallpaper="~/Documents/Wallpapers/11-0-Big-Sur-Color-Night.jpg"
+whitewallpaper="~/Documents/Wallpapers/11-0-Color-Day.jpg"
 
 if [ "$1" == "dark" ]; then
     dconf write /org/gnome/desktop/interface/gtk-theme "'Orchis-Dark'"
@@ -26,12 +26,13 @@ if [ "$1" == "dark" ]; then
         mv "$QT6_CONF.bak" "$QT6_CONF"
     fi
 
-    sed -i 's/"workbench.colorTheme": "[^"]*"/"workbench.colorTheme": "Decay"/' ~/.config/Code/User/settings.json
+    sed -i 's/"workbench.colorTheme": "[^"]*"/"workbench.colorTheme": "Bearded Theme Arc"/' ~/.config/Code/User/settings.json
 
-    hyprctl hyprpaper preload "$whitewallpaper"
+    hyprctl hyprpaper preload "$blackwallpaper"
 
-    hyprctl hyprpaper wallpaper "eDP-1,$whitewallpaper"
-    hyprctl hyprpaper wallpaper "HDMI-A-1,$whitewallpaper"
+    hyprctl hyprpaper wallpaper "eDP-1,$blackwallpaper"
+    hyprctl hyprpaper wallpaper "HDMI-A-1,$blackwallpaper"
+
 
 elif [ "$1" == "light" ]; then
      dconf write /org/gnome/desktop/interface/gtk-theme "'Orchis-Light'"
@@ -48,12 +49,12 @@ elif [ "$1" == "light" ]; then
         mv "$QT6_ALT_CONF" "$QT6_CONF"
     fi
 
-    sed -i 's/"workbench.colorTheme": "[^"]*"/"workbench.colorTheme": "Light Decay"/' ~/.config/Code/User/settings.json
+    sed -i 's/"workbench.colorTheme": "[^"]*"/"workbench.colorTheme": "Bearded Theme Light"/' ~/.config/Code/User/settings.json
 
-    hyprctl hyprpaper preload "$blackwallpaper"
+    hyprctl hyprpaper preload "$whitewallpaper"
 
-    hyprctl hyprpaper wallpaper "eDP-1,$blackwallpaper"
-    hyprctl hyprpaper wallpaper "HDMI-A-1,$blackwallpaper"
+    hyprctl hyprpaper wallpaper "eDP-1,$whitewallpaper"
+    hyprctl hyprpaper wallpaper "HDMI-A-1,$whitewallpaper"
 
 else
     echo "Использование: $0 [dark|light]"
