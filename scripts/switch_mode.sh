@@ -9,8 +9,8 @@ QT5_ALT_CONF="$QT5_DIR/qt5ct1.conf"
 QT6_CONF="$QT6_DIR/qt6ct.conf"
 QT6_ALT_CONF="$QT6_DIR/qt6ct1.conf"
 
-blackwallpaper="~/Documents/Wallpapers/11-0-Big-Sur-Color-Night.jpg"
-whitewallpaper="~/Documents/Wallpapers/11-0-Color-Day.jpg"
+blackwallpaper="~/Documents/Wallpapers/tianshu-liu-aqZ3UAjs_M4-unsplash.jpg"
+whitewallpaper="~/Documents/Wallpapers/tianshu-liu-aqZ3UAjs_M4-unsplash.jpg"
 
 if [ "$1" == "dark" ]; then
     dconf write /org/gnome/desktop/interface/gtk-theme "'Orchis-Dark'"
