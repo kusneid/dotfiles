@@ -9,12 +9,15 @@ QT5_ALT_CONF="$QT5_DIR/qt5ct1.conf"
 QT6_CONF="$QT6_DIR/qt6ct.conf"
 QT6_ALT_CONF="$QT6_DIR/qt6ct1.conf"
 
-blackwallpaper="~/Documents/Wallpapers/tianshu-liu-aqZ3UAjs_M4-unsplash.jpg"
-whitewallpaper="~/Documents/Wallpapers/tianshu-liu-aqZ3UAjs_M4-unsplash.jpg"
+blackwallpaper="~/Documents/Wallpapers/IMG_5833.JPG"
+whitewallpaper="~/Documents/Wallpapers/IMG_5833.JPG"
 
 if [ "$1" == "dark" ]; then
     dconf write /org/gnome/desktop/interface/gtk-theme "'Orchis-Dark'"
     dconf write /org/gnome/desktop/interface/color-scheme "'prefer-dark'"
+
+    spicetify config color_scheme Catppuccin-Frappe
+    spicetify apply
 
     if [ -f "$QT5_CONF.bak" ]; then
         mv "$QT5_CONF" "$QT5_ALT_CONF"
@@ -26,7 +29,7 @@ if [ "$1" == "dark" ]; then
         mv "$QT6_CONF.bak" "$QT6_CONF"
     fi
 
-    sed -i 's/"workbench.colorTheme": "[^"]*"/"workbench.colorTheme": "Bearded Theme Arc"/' ~/.config/Code/User/settings.json
+    sed -i 's/"workbench.colorTheme": "[^"]*"/"workbench.colorTheme": "Subaru (Dark)"/' ~/.config/Code/User/settings.json
 
     hyprctl hyprpaper preload "$blackwallpaper"
 
@@ -37,6 +40,9 @@ if [ "$1" == "dark" ]; then
 elif [ "$1" == "light" ]; then
      dconf write /org/gnome/desktop/interface/gtk-theme "'Orchis-Light'"
     dconf write /org/gnome/desktop/interface/color-scheme "'prefer-light'"
+
+    spicetify config color_scheme Catppuccin-Latte
+    spicetify apply
 
 
     if [ -f "$QT5_ALT_CONF" ]; then
@@ -49,7 +55,7 @@ elif [ "$1" == "light" ]; then
         mv "$QT6_ALT_CONF" "$QT6_CONF"
     fi
 
-    sed -i 's/"workbench.colorTheme": "[^"]*"/"workbench.colorTheme": "Bearded Theme Light"/' ~/.config/Code/User/settings.json
+    sed -i 's/"workbench.colorTheme": "[^"]*"/"workbench.colorTheme": "Subaru (Light)"/' ~/.config/Code/User/settings.json
 
     hyprctl hyprpaper preload "$whitewallpaper"
 
