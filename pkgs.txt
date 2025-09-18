@@ -1,0 +1,1 @@
+hyprland hyprpaper waybar kitty rofi-wayland waybar dunst network-manager-applet hyprland-per-window-layout cliphist wl-clipboard blueman telegram-desktop nekoray-bin nautilus google-chrome hyprlock wlogout visual-studio-code-bin hyprshot nvim yazi cmus obsidian pamixer playerctl brightnessctl 

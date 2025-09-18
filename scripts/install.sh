@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CONFIG_DIR="/home/kusneid/.config"
+CONFIG_DIR="~/.config"
 
 echo "It's recommended to execute this shell script in tty and without hypr, dunst, rofi, and waybar folders in ~/.config"
 
