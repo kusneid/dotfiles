@@ -1,7 +1,7 @@
 {
   "layer": "top",
   "position": "top",
-  "height": 18,
+  "height": 9,
   "spacing": 10,
   "exclusive": true,
   "gtk-layer-shell": true,
@@ -19,32 +19,39 @@
     "battery",
     "tray"
   ],
-
   "tray": {
     "show-passive-items": true,
-    "icon-size": 24 ,
+    "icon-size": 24,
     "rotate": 0,
     "spacing": 6
   },
-
   "hyprland/language": {
     "format": "  {}",
     "format-en": "en",
     "format-ru": "ru"
   },
-  
   "battery": {
     "format": "{icon}  {capacity}%",
     "format-full": "{icon}  {capacity}%",
     "format-charging": " {capacity}%",
     "format-plugged": "  {capacity}%",
     "format-alt": "{time} {icon}",
-    "format-icons": [""]
+    "format-icons": [
+      ""
+    ]
   },
   "clock": {
-    "format": "<span color='#6bfffd'></span>{:%I:%M %p}",
-    "format-alt": "<span color='#ff9854'>  </span>{:%a %b %d}",
-    "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>"
+    "format": "<span color='#00B4B4'></span>{:%I:%M %p}",
+    "format-alt": "<span color='#00B4B4'>  </span>{:%a %b %d}",
+    "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "format": {
+        "months": "<span color='#D3D04F'><b>{}</b></span>",
+        "days": "<span color='#93B1A6'><b>{}</b></span>",
+        "weekdays": "<span color='#00B4B4'><b>{}</b></span>",
+        "today": "<span color='#00B4B4'><b><u>{}</u></b></span>"
+      }
+    }
   },
   "cpu": {
     "format": "   {usage}%",
@@ -58,7 +65,9 @@
     "format": "{volume}%",
     "format-muted": "  muted",
     "format-icons": {
-      "default": [" "]
+      "default": [
+        " "
+      ]
     },
     "on-click": "pavucontrol",
     "on-click-middle": "pamixer -t"
@@ -83,8 +92,8 @@
     "on-scroll-down": "playerctl previous",
     "on-scroll-up": "playerctl next",
     "format-icons": {
-      "Playing": "<span foreground='#E5B9C6'>󰒮 󰐌 󰒭</span>",
-      "Paused": "<span foreground='#928374'>󰒮 󰏥 󰒭</span>"
+      "Playing": "<span foreground='#00B4B4'>󰒮 󰐌 󰒭</span>",
+      "Paused": "<span foreground='#00B4B4'>󰒮 󰏥 󰒭</span>"
     }
   },
   "custom/playerlabel": {
@@ -96,8 +105,8 @@
     "on-scroll-down": "playerctl previous",
     "on-scroll-up": "playerctl next",
     "format-icons": {
-      "Playing": "<span foreground='#E5B9C6'>󰒮 󰐌 󰒭</span>",
-      "Paused": "<span foreground='#928374'>󰒮 󰏥 󰒭</span>"
+      "Playing": "<span foreground='#00B4B4'>󰒮 󰐌 󰒭</span>",
+      "Paused": "<span foreground='#00B4B4'>󰒮 󰏥 󰒭</span>"
     }
   }
 }
